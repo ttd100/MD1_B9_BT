@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhập số tiền muốn vay');
+    let b = +prompt('nhập số tháng vay');
+    let c = +prompt('nhập lãi suất')
+
+    for( let i=0;i<b;i++){
+        a=a +(a*c)/100;
+    }
+    document.write('số tiền phải trả là '+a)
+
+</script>
+</body>
+</html>

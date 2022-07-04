@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doC = +prompt('nhập nhiệt độ')
+    let flog=true
+    while (flog){
+        if ((doC>100)){
+            doC = +prompt('giảm nhiệt xuống')
+        }else if (doC<20){
+            doC=+prompt("tăng nhiệt lên")
+        }else if (doC>=20 && doC <=100){
+            flog = false
+            // document.write('nhiệt độ lúc này là : '+doC)
+        }else {
+            doC= +prompt('nhap vao so')
+        }
+    }
+    document.write('nhiệt độ lúc này là : '+doC)
+</script>
+</body>
+</html>
